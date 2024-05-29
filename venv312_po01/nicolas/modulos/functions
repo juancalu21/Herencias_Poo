@@ -1,0 +1,42 @@
+#   Funciones
+def titulo():
+    print()
+    print('*'*30)
+    print('TABLAS DE MULTIPLICAR')
+    print( )
+    print('*'*30)
+    print()
+    os.system('pause')
+
+
+def multi_ciclo():
+    #Se genera un numero aleatorio entre 1 y 20
+    aleatorio=randint(1,20)
+    numero=1
+    print ('NUMERO DE TABLAS ALEATORIAS: ',aleatorio)
+
+    f2=1
+    f1=1
+
+    #Se genera un ciclo para generar las tablas de multiplicar aleatorias
+    while numero> 0 and numero <= aleatorio:
+        
+        #Se genera un ciclo para generar las tablas de multiplicar
+        while f1 <= aleatorio:
+            print()
+            #Se imprime el titulo de la tabla de multiplicar
+            print ('*'*30)
+            print()
+            #Se imprime el numero de la tabla de multiplicar
+            print ('TABLA DE MULTIPLICAR DEL NUMERO: ',numero)
+            print ()
+            #Se imprimen las tablas de multiplicar
+            
+            for f2 in range (1,11):
+                producto= f1*f2
+                print (numero,'x',f2,'=',producto)
+            os.system('pause')
+            f1+=1                                  #se aumenta el valor de f1 para que se genere la siguiente tabla de multiplicar
+            numero+=1                              #se aumenta el valor de numero para que se genere la siguiente tabla de multiplicar
+
+
